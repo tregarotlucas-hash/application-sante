@@ -1,0 +1,8 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Données générées par l'app (ignorées — propres à chaque utilisateur)
+donnees_sante.csv
+graphique_sante.png
