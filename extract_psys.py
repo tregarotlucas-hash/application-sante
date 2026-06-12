@@ -28,7 +28,8 @@ def fetch_bundle(url, params=None):
     if resp.status_code != 200:
         print(f"\nErreur HTTP {resp.status_code}: {resp.text[:300]}")
         return None
-    return resp.json()
+    import json
+    return json.loads(resp.content, strict=False)
 
 
 def get_practitioners():
